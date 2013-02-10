@@ -1,0 +1,128 @@
+﻿/* 
+ * This file is part of ConversationPrinter.
+ * ConversationPrinter is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * ConversationPrinter is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser Public License for more details.
+ * 
+ * You should have received a copy of the GNU Lesser Public License
+ * along with ConversationPrinter. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+namespace ConversationPrinter
+    {
+    partial class frmConv
+        {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+            {
+            if (disposing && (components != null))
+                {
+                components.Dispose();
+                }
+            base.Dispose(disposing);
+            }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+            {
+            this.langCombo = new System.Windows.Forms.ComboBox();
+            this.convListBox = new System.Windows.Forms.ListBox();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // langCombo
+            // 
+            this.langCombo.FormattingEnabled = true;
+            this.langCombo.Items.AddRange(new object[] {
+            "English",
+            "French",
+            "German",
+            "Italien",
+            "Spanish",
+            "Polish",
+            "Russian",
+            "Korean",
+            "Chinese (Traditional)",
+            "Chinese (Simplified)",
+            "Japanese"});
+            this.langCombo.Location = new System.Drawing.Point(12, 178);
+            this.langCombo.Name = "langCombo";
+            this.langCombo.Size = new System.Drawing.Size(121, 21);
+            this.langCombo.TabIndex = 0;
+            this.langCombo.Text = "English";
+            // 
+            // convListBox
+            // 
+            this.convListBox.FormattingEnabled = true;
+            this.convListBox.Location = new System.Drawing.Point(12, 12);
+            this.convListBox.Name = "convListBox";
+            this.convListBox.Size = new System.Drawing.Size(284, 147);
+            this.convListBox.TabIndex = 1;
+            this.convListBox.SelectedIndexChanged += new System.EventHandler(this.convListBox_SelectedIndexChanged);
+            this.convListBox.SelectedValueChanged += new System.EventHandler(this.convListBox_SelectedValueChanged);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Enabled = false;
+            this.saveButton.Location = new System.Drawing.Point(189, 178);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(107, 23);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.Text = "Save Conversation";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 162);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Status:";
+            // 
+            // frmConv
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(308, 209);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.convListBox);
+            this.Controls.Add(this.langCombo);
+            this.Name = "frmConv";
+            this.Text = "Conversation Printer";
+            this.Load += new System.EventHandler(this.frmConv_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+            }
+
+        #endregion
+
+        private System.Windows.Forms.ComboBox langCombo;
+        private System.Windows.Forms.ListBox convListBox;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label label1;
+        }
+    }
